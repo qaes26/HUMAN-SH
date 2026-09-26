@@ -540,7 +540,11 @@
       border: 1px solid rgba(233,30,99,0.12);
       max-height: 48vh;
       overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(233,30,99,0.35) transparent;
     }
+    .mb::-webkit-scrollbar { width: 4px; }
+    .mb::-webkit-scrollbar-thumb { background: rgba(233,30,99,0.35); border-radius: 4px; }
     .ms {
       text-align: left;
       font-family: 'Cairo', sans-serif;
