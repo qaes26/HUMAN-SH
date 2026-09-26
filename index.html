@@ -1,0 +1,1655 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>تشريح حب شادية ❤️ | إعداد: قيس الجازي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:#0a0810; --glass:rgba(14,10,22,0.92); --glass-b:rgba(233,30,99,0.22);
+      --pink:#e91e63; --rose:#ff4081; --blush:#f8bbd0; --deep:#880e4f;
+      --glow:0 0 25px rgba(233,30,99,0.3);
+      --safe-b: env(safe-area-inset-bottom, 0px);
+      --safe-t: env(safe-area-inset-top, 0px);
+    }
+    *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+    body,html{width:100%;height:100%;overflow:hidden;font-family:'Cairo','Tajawal',sans-serif;background:#050308;color:#fff;touch-action:none}
+
+    /* === حاوية العرض المتجاوبة (مخصص للهواتف) === */
+    .app-viewport {
+      width: 100vw;
+      height: 100vh;
+      height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(ellipse at 50% 50%, #1c0d28 0%, #060309 100%);
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* شاشة هاتف ذكي مخصصة */
+    .mobile-frame {
+      position: relative;
+      width: 100%;
+      max-width: 440px;
+      height: 100%;
+      max-height: 100dvh;
+      overflow: hidden;
+      background: radial-gradient(ellipse at 50% 48%, #140e1e 0%, #0a0810 70%);
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* إطار الهاتف المضيء على شاشات العرض الكبيرة (Desktop) لإعطاء تجربة هاتف كاملة وواضحة */
+    @media (min-width: 480px) {
+      .mobile-frame {
+        height: min(94vh, 880px);
+        border-radius: 46px;
+        box-shadow: 0 0 0 10px #180f22, 0 0 0 12px rgba(233,30,99,0.35), 0 25px 70px rgba(0,0,0,0.85), 0 0 55px rgba(233,30,99,0.25);
+        border: 1.5px solid rgba(255, 64, 129, 0.35);
+      }
+      .phone-island {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 110px;
+        height: 24px;
+        background: #000;
+        border-radius: 20px;
+        z-index: 50;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        border: 1px solid rgba(255,255,255,0.08);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+        pointer-events: none;
+      }
+      .phone-speaker {
+        width: 38px;
+        height: 3.5px;
+        background: #252525;
+        border-radius: 3px;
+      }
+      .phone-cam {
+        width: 8px;
+        height: 8px;
+        background: #111122;
+        border-radius: 50%;
+        border: 1px solid #20203a;
+      }
+    }
+
+    /* على الهواتف المحمولة: ملء كامل للشاشة بدون حواف */
+    @media (max-width: 479px) {
+      .mobile-frame {
+        max-width: 100%;
+        height: 100dvh;
+        max-height: 100dvh;
+        border-radius: 0;
+        border: none;
+        box-shadow: none;
+      }
+      .phone-island {
+        display: none;
+      }
+    }
+
+    #c3d {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* === الشريط العلوي للهاتف === */
+    .top-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      padding: 10px 14px 6px;
+      padding-top: calc(14px + var(--safe-t));
+      background: linear-gradient(180deg, rgba(10,8,16,0.97) 0%, rgba(10,8,16,0.85) 75%, transparent 100%);
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .top-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand {
+      pointer-events: auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-h {
+      width: 38px;
+      height: 38px;
+      background: linear-gradient(135deg, #e91e63, #ff4081);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 19px;
+      animation: hb 1.3s ease-in-out infinite;
+      box-shadow: 0 0 16px rgba(233,30,99,0.45);
+      flex-shrink: 0;
+    }
+    @keyframes hb{0%,100%{transform:scale(1)}15%{transform:scale(1.18)}30%{transform:scale(1.04)}45%{transform:scale(1.22)}}
+    .brand h1 {
+      font-size: 16px;
+      font-weight: 900;
+      background: linear-gradient(90deg, #f8bbd0, #ff4081, #e91e63);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      line-height: 1.2;
+    }
+    .brand-sub {
+      font-size: 11px;
+      font-weight: 800;
+      color: var(--rose);
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      margin-top: 1px;
+    }
+    .top-actions {
+      pointer-events: auto;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+
+    /* === أزرار التصفية والتحكم === */
+    .ctrls {
+      pointer-events: auto;
+      display: flex;
+      gap: 5px;
+      align-items: center;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 2px;
+    }
+    .ctrls::-webkit-scrollbar { display: none; }
+    .cb {
+      background: var(--glass);
+      border: 1px solid var(--glass-b);
+      border-radius: 12px;
+      padding: 6px 10px;
+      color: var(--blush);
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .2s;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      min-height: 34px;
+    }
+    .cb:hover, .cb.on {
+      background: var(--pink);
+      color: #fff;
+      border-color: var(--pink);
+      box-shadow: var(--glow);
+    }
+    .cb-icon {
+      padding: 6px 9px;
+      font-size: 14px;
+    }
+
+    /* === شريط الأعضاء الأفقي المخصص للهاتف === */
+    .side {
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 22;
+      display: flex;
+      flex-direction: row;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      -webkit-overflow-scrolling: touch;
+      padding: 6px 14px;
+      pointer-events: auto;
+    }
+    .side::-webkit-scrollbar { display: none; }
+    .sb {
+      background: var(--glass);
+      border: 1px solid var(--glass-b);
+      border-radius: 20px;
+      padding: 6px 12px;
+      color: var(--blush);
+      font-family: inherit;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all .2s;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .sb:hover { border-color: var(--rose); color: #fff; }
+    .sb.on {
+      background: linear-gradient(135deg, #e91e63, #c2185b);
+      color: #fff;
+      border-color: var(--pink);
+      box-shadow: var(--glow);
+    }
+    .sd {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: var(--pink);
+      box-shadow: 0 0 5px var(--pink);
+    }
+
+    /* === لوحة الغزل كـ Bottom Sheet للهاتف === */
+    .lp {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 25;
+      background: var(--glass);
+      backdrop-filter: blur(22px);
+      -webkit-backdrop-filter: blur(22px);
+      border: 1px solid var(--glass-b);
+      border-bottom: none;
+      border-radius: 24px 24px 0 0;
+      box-shadow: 0 -10px 40px rgba(0,0,0,0.6), 0 0 30px rgba(233,30,99,0.15);
+      display: flex;
+      flex-direction: column;
+      transition: transform .4s cubic-bezier(.16,1,.3,1);
+      transform: translateY(0);
+      max-height: 72%;
+      width: 100%;
+    }
+    .lp.collapsed {
+      transform: translateY(calc(100% - 64px));
+    }
+    .lp-handle {
+      padding: 10px 16px 8px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      cursor: pointer;
+      flex-shrink: 0;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    .lp-handle-bar {
+      width: 44px;
+      height: 4.5px;
+      background: rgba(248,187,208,0.35);
+      border-radius: 4px;
+      margin-bottom: 7px;
+    }
+    .lp-handle-preview {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .lp-handle-title {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--rose);
+    }
+    .lp-handle-hint {
+      font-size: 11px;
+      color: rgba(248,187,208,0.55);
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .lpi {
+      padding: 14px 16px;
+      overflow-y: auto;
+      flex: 1;
+      scrollbar-width: thin;
+      scrollbar-color: rgba(233,30,99,0.25) transparent;
+      -webkit-overflow-scrolling: touch;
+    }
+    .lpi::-webkit-scrollbar { width: 3px; }
+    .lpi::-webkit-scrollbar-thumb { background: rgba(233,30,99,0.25); border-radius: 3px; }
+    .ph {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid rgba(233,30,99,0.14);
+      margin-bottom: 12px;
+    }
+    .pi {
+      width: 44px;
+      height: 44px;
+      min-width: 44px;
+      background: linear-gradient(135deg, rgba(233,30,99,0.2), rgba(255,64,129,0.14));
+      border: 1px solid rgba(233,30,99,0.3);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 23px;
+    }
+    .pt { font-size: 18px; font-weight: 900; color: var(--rose); line-height: 1.2; }
+    .ps { font-size: 11px; color: rgba(248,187,208,0.5); font-style: italic; }
+    .pb {
+      display: inline-flex;
+      align-items: center;
+      gap: 3px;
+      background: rgba(233,30,99,0.12);
+      padding: 2px 8px;
+      border-radius: 14px;
+      font-size: 9px;
+      font-weight: 700;
+      color: var(--rose);
+      margin-top: 3px;
+      border: 1px solid rgba(233,30,99,0.2);
+    }
+    .db {
+      background: rgba(255,255,255,0.035);
+      border-radius: 12px;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+      border: 1px solid rgba(255,255,255,0.06);
+    }
+    .dbt {
+      font-size: 10px;
+      font-weight: 800;
+      color: var(--rose);
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .dd { font-size: 11px; line-height: 1.65; color: rgba(255,255,255,0.76); }
+    .gb {
+      background: linear-gradient(145deg, rgba(233,30,99,0.12), rgba(136,14,79,0.16));
+      border: 1.5px solid rgba(233,30,99,0.35);
+      border-radius: 14px;
+      padding: 14px;
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 10px;
+      box-shadow: inset 0 0 30px rgba(233,30,99,0.06);
+    }
+    .gb::before {
+      content: "❤";
+      position: absolute;
+      top: -10px;
+      left: -10px;
+      font-size: 55px;
+      color: rgba(233,30,99,0.06);
+      pointer-events: none;
+    }
+    .gt {
+      font-size: 12px;
+      font-weight: 800;
+      color: var(--rose);
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .gm {
+      font-family: 'Amiri', serif;
+      font-size: 14.5px;
+      line-height: 1.8;
+      color: var(--blush);
+      font-style: italic;
+      position: relative;
+      z-index: 2;
+    }
+    .sr { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+    .sc {
+      background: rgba(255,255,255,0.035);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 10px;
+      padding: 8px 10px;
+    }
+    .sl { font-size: 9px; color: rgba(248,187,208,0.5); font-weight: 600; }
+    .sv { font-size: 11px; font-weight: 800; color: var(--rose); margin-top: 1px; }
+    .pf {
+      padding: 10px 14px;
+      padding-bottom: calc(10px + var(--safe-b));
+      background: rgba(0,0,0,0.3);
+      border-top: 1px solid rgba(233,30,99,0.15);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .sig { font-family: 'Cairo', sans-serif; font-size: 12px; font-weight: 800; color: var(--rose); }
+    .lb {
+      background: linear-gradient(135deg, #e91e63, #ff4081);
+      color: #fff;
+      border: none;
+      border-radius: 16px;
+      padding: 6px 13px;
+      font-size: 11px;
+      font-weight: 700;
+      cursor: pointer;
+      font-family: inherit;
+      box-shadow: 0 3px 12px rgba(233,30,99,0.35);
+      transition: all .2s;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .lb:hover { transform: translateY(-1px); box-shadow: 0 5px 18px rgba(233,30,99,0.5); }
+
+    /* === إشعار النقر باللمس (Mobile Tap Feedback) === */
+    .tap-label {
+      position: absolute;
+      z-index: 40;
+      pointer-events: none;
+      background: linear-gradient(135deg, rgba(233,30,99,0.92), rgba(255,64,129,0.92));
+      color: #fff;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 800;
+      box-shadow: 0 4px 16px rgba(233,30,99,0.45);
+      transform: translate(-50%,-50%);
+      opacity: 0;
+      transition: opacity .3s, transform .3s;
+      font-family: 'Cairo', sans-serif;
+    }
+    .tap-label.show { opacity: 1; transform: translate(-50%,-75%); }
+
+    /* === النافذة المنبثقة للهاتف === */
+    .mo {
+      position: absolute;
+      inset: 0;
+      z-index: 100;
+      background: rgba(0,0,0,0.65);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+    }
+    .mo.open { display: flex; }
+    .mc {
+      background: linear-gradient(160deg, #1c112b, #0d0a13);
+      border: 1.5px solid rgba(233,30,99,0.35);
+      border-radius: 24px 24px 0 0;
+      width: 100%;
+      padding: 22px 18px;
+      padding-bottom: calc(22px + var(--safe-b));
+      position: relative;
+      box-shadow: 0 -15px 50px rgba(0,0,0,0.6), 0 0 40px rgba(233,30,99,0.15);
+      animation: mi .35s cubic-bezier(.16,1,.3,1);
+      max-height: 85%;
+      overflow-y: auto;
+    }
+    @keyframes mi{from{transform:translateY(100%);opacity:0.5}to{transform:translateY(0);opacity:1}}
+    .mx {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(233,30,99,0.25);
+      color: var(--rose);
+      cursor: pointer;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all .2s;
+    }
+    .mx:hover { background: var(--pink); color: #fff; }
+    .mc h2 { text-align: center; font-size: 18px; font-weight: 900; color: var(--rose); margin-bottom: 4px; }
+    .mc .su { text-align: center; font-size: 11px; color: rgba(248,187,208,0.55); margin-bottom: 14px; font-weight: 700; }
+    .mb {
+      font-family: 'Amiri', serif;
+      font-size: 15.5px;
+      line-height: 1.85;
+      color: var(--blush);
+      background: rgba(255,255,255,0.03);
+      padding: 16px;
+      border-radius: 14px;
+      border: 1px solid rgba(233,30,99,0.12);
+      max-height: 48vh;
+      overflow-y: auto;
+    }
+    .ms {
+      text-align: left;
+      font-family: 'Cairo', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--rose);
+      margin-top: 14px;
+    }
+  </style>
+</head>
+<body>
+<div class="app-viewport">
+  <div class="mobile-frame" id="mobileFrame">
+    <!-- الجزيرة التفاعلية للهاتف -->
+    <div class="phone-island">
+      <div class="phone-speaker"></div>
+      <div class="phone-cam"></div>
+    </div>
+
+    <!-- مجسم 3D Canvas -->
+    <div id="c3d"></div>
+
+    <!-- الشريط العلوي للهاتف -->
+    <header class="top-bar">
+      <div class="top-row">
+        <div class="brand">
+          <div class="brand-h">❤</div>
+          <div>
+            <h1>تشريح حب شادية</h1>
+            <div class="brand-sub">إعداد: قيس الجازي ❤️</div>
+          </div>
+        </div>
+        <div class="top-actions">
+          <button class="cb cb-icon" id="bLetter" title="رسالة خاصة">💌</button>
+          <button class="cb cb-icon" id="bRot" title="تدوير تلقائي">🔄</button>
+          <button class="cb cb-icon" id="bRst" title="إعادة ضبط">🎯</button>
+        </div>
+      </div>
+      <div class="ctrls">
+        <button class="cb on" data-s="all">🔬 الكل</button>
+        <button class="cb" data-s="muscles">💪 العضلات</button>
+        <button class="cb" data-s="skeleton">🦴 العظام</button>
+        <button class="cb" data-s="organs">❤️ الأعضاء</button>
+        <button class="cb" data-s="vessels">🩸 الأوعية</button>
+      </div>
+    </header>
+
+    <!-- شريط تصفح الأعضاء الأفقي المخصص للهاتف -->
+    <nav class="side" id="sideN"></nav>
+
+    <!-- لوحة الغزل كـ Bottom Sheet للهاتف -->
+    <section class="lp collapsed" id="lp">
+      <div class="lp-handle" id="lpHandle">
+        <div class="lp-handle-bar"></div>
+        <div class="lp-handle-preview">
+          <div class="lp-handle-title"><span id="pI2">❤️</span> <span id="pT2">القلب</span></div>
+          <div class="lp-handle-hint">⬆ اسحب لقراءة غزل شادية</div>
+        </div>
+      </div>
+      <div class="lpi" id="lpI">
+        <div class="ph">
+          <div class="pi" id="pI">❤️</div>
+          <div>
+            <div class="pb" id="pB">عضو حيوي</div>
+            <h2 class="pt" id="pT">القلب</h2>
+            <span class="ps" id="pS">Cor</span>
+          </div>
+        </div>
+        <div class="db">
+          <div class="dbt">🔬 الوصف التشريحي</div>
+          <p class="dd" id="pD">...</p>
+        </div>
+        <div class="gb">
+          <div class="gt">💌 غزل لشادية</div>
+          <p class="gm" id="pG">"..."</p>
+        </div>
+        <div class="sr">
+          <div class="sc"><div class="sl" id="s1l">...</div><div class="sv" id="s1v">...</div></div>
+          <div class="sc"><div class="sl" id="s2l">...</div><div class="sv" id="s2v">...</div></div>
+        </div>
+      </div>
+      <div class="pf">
+        <span class="sig">إعداد: قيس الجازي... ❤️</span>
+        <button class="lb" id="oL">💌 رسالة خاصة</button>
+      </div>
+    </section>
+
+    <!-- تلميح النقر التفاعلي -->
+    <div class="tap-label" id="tapLabel"></div>
+
+    <!-- نافذة الرسالة الخاصة المنبثقة -->
+    <div class="mo" id="modal">
+      <div class="mc">
+        <button class="mx" id="mX">✕</button>
+        <h2>رسالة من أعماق القلب إلى شادية ❤️</h2>
+        <p class="su">إعداد: قيس الجازي... إلى ملهمة الروح شادية</p>
+        <div class="mb">
+          إلى شادية الغالية...<br><br>
+          حين نظرتُ إلى تفاصيل هذا الجسد البشري المعقد، لم أرَ فيه مجرد خلايا وعظام وعضلات، بل رأيتُ في كل زاوية منه دليلاً على عمق ما أحمله لكِ.<br><br>
+          فالقلب لا يضخ إلا باسمكِ، والرئتان لا تشتاقان إلا لنسيم حضوركِ، والعقل لا يستريح إلا حين يحلّق في ذكراكِ، وعظام هذا الجسد ما قامت إلا لأن حبكِ هو عمودها وسندها المتين.<br><br>
+          هذا العمل المتواضع لم يُصمم إلا لأجلكِ... ليكون شاهداً أبدياً على أن كل نبضة، وكل فكرة، وكل شعور في كياني مسخّر لحبكِ والوفاء لكِ إلى ما لا نهاية.
+        </div>
+        <div class="ms">المحب والمخلص دوماً: قيس الجازي ❤️</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/18.6.4/tween.umd.js"></script>
+<script>
+// =============================================
+// بيانات الأعضاء والغزل بشادية
+// =============================================
+const P={
+  skull:{n:'الجمجمة وعظام الوجه',la:'Cranium & Viscerocranium',ic:'💀',sy:'الهيكل العظمي',sk:'skeleton',
+    d:'الحصن العظمي الذي يحمي الدماغ ويشكّل ملامح الوجه. يتكون من 22 عظمة مندمجة بدروز عظمية متشعبة.',
+    g:'يا شادية، هذه الجمجمة ما بُنيت إلا لتحمي دماغاً لا يفكر إلا فيكِ. وهذا الوجه لا يعرف ابتسامة صادقة إلا حين يتذكركِ. ملامحي كلها رسمها حبكِ... وعظامها نُحتت على شكل اسمكِ.',
+    s1l:'سبب الابتسامة',s1v:'ذكرى شادية',s2l:'أجمل ملمح',s2v:'عينان تبحثان عنكِ',
+    cam:{x:0,y:3.2,z:2.8},tgt:{x:0,y:2.8,z:0}},
+  brain:{n:'الدماغ',la:'Encephalon',ic:'🧠',sy:'الجهاز العصبي',sk:'organs',
+    d:'مركز التحكم الأعلى بـ86 مليار خلية عصبية. يتكون من نصفي الكرة المخية والمخيخ وجذع الدماغ.',
+    g:'يا شادية، مركز التحكم في جسدي لا يتوقف عن التفكير فيكِ وذكراكِ. كل ومضة عصبية تشتعل بصورتكِ، وكل فكرة تبدأ منكِ وتنتهي إليكِ. عقلي مسكون بعشقكِ ولا يوجد زر إعادة ضبط لهذا الحب أبداً!',
+    s1l:'الذاكرة المهيمنة',s1v:'100% ذكريات شادية',s2l:'نشاط التفكير',s2v:'مكرّس لشادية',
+    cam:{x:0,y:3.3,z:2.2},tgt:{x:0,y:2.9,z:0}},
+  eyes:{n:'العينان',la:'Oculi',ic:'👁️',sy:'أعضاء الحواس',sk:'organs',
+    d:'عضوا الإبصار اللذان يحتويان على 120 مليون مستقبل ضوئي في الشبكية لالتقاط الصور.',
+    g:'يا شادية، هاتان العينان ما خُلقتا إلا لتنظرا إليكِ أنتِ. لو أن العالم كله أمامي وأنتِ في زاويته... ستجدينني أنظر إلى زاويتكِ فقط. عيناي أسيرتان بجمالكِ وأرفض أن أشفى من هذا السحر!',
+    s1l:'البؤرة البصرية',s1v:'مثبتة على شادية',s2l:'أجمل مشهد رأيته',s2v:'وجه شادية',
+    cam:{x:0,y:2.8,z:2},tgt:{x:0,y:2.65,z:0.3}},
+  neck:{n:'الرقبة والحنجرة',la:'Collum & Larynx',ic:'🦒',sy:'الهيكل المحوري',sk:'muscles',
+    d:'تضم 7 فقرات عنقية وعضلات SCM والحنجرة والغدة الدرقية والأوعية السباتية.',
+    g:'يا شادية، رقبتي لا تلتفت إلا نحوكِ، ومن حنجرتي لا يخرج إلا ذكركِ وتسبيح جمالكِ. كل مرة أسمع فيها اسمكِ... أدير رأسي بأكمله باحثاً عن مصدر هذا الدفء الذي يشبهكِ.',
+    s1l:'اتجاه الالتفات',s1v:'حيث شادية',s2l:'أعذب صوت',s2v:'همس اسم شادية',
+    cam:{x:0.6,y:2.4,z:2.5},tgt:{x:0,y:2.2,z:0}},
+  heart:{n:'القلب',la:'Cor Humanum',ic:'❤️',sy:'الجهاز الدوري',sk:'organs',
+    d:'عضو عضلي مجوف بأربع حجرات يضخ 7000 لتر دم يومياً عبر 100,000 كم من الأوعية الدموية.',
+    g:'يا شادية، هذا القلب ينبض بقوة حبكِ في كل شريان من شراييني. مع كل انقباضة يهتف باسمكِ، ومع كل انبساطة يتسع ليفيض حناناً لكِ وحدكِ. لو توقف عن حبكِ... لتوقف عن النبض فوراً!',
+    s1l:'سرعة الخفقان',s1v:'120 bpm شوقاً',s2l:'سبب النبض الوحيد',s2v:'حب شادية',
+    cam:{x:-0.5,y:1.6,z:2.8},tgt:{x:-0.1,y:1.5,z:0.1}},
+  lungs:{n:'الرئتان',la:'Pulmones',ic:'🫁',sy:'الجهاز التنفسي',sk:'organs',
+    d:'العضوان الإسفنجيان للتنفس بمساحة سطح داخلية 70 م² لتبادل الغازات الحيوية.',
+    g:'يا شادية، أنتِ الأكسجين الذي تتنفسه رئتاي. بدونكِ تضيق الأنفاس ويختنق الوجدان. مع كل شهيق يتردد اسمكِ كنسيم عليل يحيي الروح... ومع كل زفير أطلق تنهيدة شوقٍ لا تنتهي إليكِ!',
+    s1l:'هواء الشهيق',s1v:'معطّر بذكر شادية',s2l:'سبب التنفس',s2v:'لأبقى أحبها',
+    cam:{x:0.5,y:1.6,z:3},tgt:{x:0,y:1.5,z:0}},
+  ribcage:{n:'القفص الصدري',la:'Cavea Thoracis',ic:'🩻',sy:'الهيكل العظمي',sk:'skeleton',
+    d:'12 زوجاً من الأضلاع المقوسة مع عظم القص تشكل درعاً يحمي القلب والرئتين.',
+    g:'يا شادية، هذا القفص الصدري بُني ليحمي القلب... لكنه فتح كل بواباته طوعاً واستسلم لحبكِ بلا مقاومة. صدري ملاذكِ الآمن، وأضلاعي سياجٌ يحرس ذكراكِ الغالية من كل نسيان!',
+    s1l:'مهمة الأضلاع',s1v:'حماية حب شادية',s2l:'حالة القفص',s2v:'مفتوح لشادية فقط',
+    cam:{x:0,y:1.5,z:3},tgt:{x:0,y:1.4,z:0.1}},
+  spine:{n:'العمود الفقري',la:'Columna Vertebralis',ic:'🦴',sy:'الهيكل المحوري',sk:'skeleton',
+    d:'33 فقرة (7 عنقية، 12 صدرية، 5 قطنية، 5 عجزية، 4 عصعصية) تشكل الدعامة المركزية للجسم.',
+    g:'يا شادية، كما يسند العمود الفقري الجسد... فإن حبكِ هو العمود الذي تقوم عليه روحي كلها. بقربكِ أستقيم وأشتد، وبحبكِ لا أنحني أمام عواصف الدنيا. أنتِ فقراتي ومتكئي الأبدي!',
+    s1l:'سبب الاستقامة',s1v:'حب شادية',s2l:'صلابة الفقرات',s2v:'صلبة كوعد قيس الجازي',
+    cam:{x:-1.5,y:1.3,z:-2.5},tgt:{x:0,y:1.2,z:0}},
+  pectorals:{n:'عضلة الصدر الكبرى',la:'Pectoralis Major',ic:'💪',sy:'الجهاز العضلي',sk:'muscles',
+    d:'عضلة مروحية سميكة ذات ألياف متقاطعة تغطي مقدمة الصدر وتتحكم بعضد الذراع.',
+    g:'يا شادية، عضلات صدري ما تقوّت إلا لتكون درعاً يحميكِ وحضناً يحتويكِ. في هذا الصدر ملاذكِ الدافئ في كل ليلة باردة... وبين ألياف هذه العضلات يسكن قلبٌ لا يخفق إلا باسمكِ!',
+    s1l:'مهمة العضلة',s1v:'احتضان شادية',s2l:'قوة الحماية',s2v:'لا نهائية لأجلها',
+    cam:{x:0,y:1.75,z:2.8},tgt:{x:0,y:1.65,z:0.3}},
+  deltoids:{n:'العضلة الدالية',la:'Deltoideus',ic:'🏋️',sy:'الجهاز العضلي',sk:'muscles',
+    d:'عضلة مثلثية بثلاثة رؤوس تغلف مفصل الكتف وتمنحه المدى الحركي الكامل.',
+    g:'يا شادية، هذان الكتفان ما عرضا إلا ليحملا همومكِ عنكِ. استندي عليهما وقت التعب والحزن... فهما لكِ وحدكِ. لن أتعب أبداً ولن أشتكي ما دام الحمل من أجلكِ يا غالية!',
+    s1l:'تحمّل الأكتاف',s1v:'غير محدود',s2l:'رسالتهما',s2v:'استندي عليّ يا شادية',
+    cam:{x:1.2,y:2.2,z:2.5},tgt:{x:0,y:2,z:0}},
+  biceps:{n:'العضلة ذات الرأسين',la:'Biceps Brachii',ic:'💪',sy:'الجهاز العضلي',sk:'muscles',
+    d:'عضلة مغزلية ذات رأسين طويل وقصير، تثني المرفق وتدير الساعد.',
+    g:'يا شادية، هذه الذراع لا تقوى إلا لتحميكِ وتمسك يدكِ في كل خطوة. كل تمرين وكل جهد بذلته كان ليجعلني أهلاً لحبكِ وجديراً بأن أكون سندكِ في هذه الحياة!',
+    s1l:'مهارة الذراع',s1v:'كتابة غزل شادية',s2l:'حرارة اللمسة',s2v:'دفء لا ينطفئ',
+    cam:{x:-1.8,y:1.5,z:2.5},tgt:{x:-0.9,y:1.35,z:0}},
+  hands:{n:'اليدان والأصابع',la:'Manus & Digiti',ic:'🤲',sy:'الأطراف العلوية',sk:'muscles',
+    d:'27 عظمة في كل يد مع عضلات وأوتار دقيقة تمنح الإنسان قدرة اللمس والإبداع.',
+    g:'يا شادية، هاتان اليدان خُلقتا لتمسحا دمعتكِ وتشبّكا أصابعكِ. كل سطر أكتبه بهما غزلٌ في حبكِ، وكل لمسة منهما وعدٌ بالوفاء. تتشابكان مع يديكِ ليشعر الكون أنكِ لي وأنا لكِ!',
+    s1l:'أنعم لمسة',s1v:'مسح دمعة شادية',s2l:'أجمل ما كتبتا',s2v:'اسم شادية',
+    cam:{x:-1.8,y:0.1,z:2.8},tgt:{x:-1.1,y:-0.1,z:0}},
+  abs:{n:'عضلات البطن المستقيمة',la:'Rectus Abdominis',ic:'✨',sy:'الجهاز العضلي',sk:'muscles',
+    d:'6 حزم عضلية متناظرة مفصولة بأوتار بيضاء، تشكل جدار البطن الأمامي.',
+    g:'يا شادية، مركز قوتي وتوازني. كل تمرين كان لأكون جديراً بكِ وبفخركِ. هذه العضلات تحمل عهداً صامتاً بأنني لن أضعف أمام الحياة ما دمتِ في قلبي... أنتِ مصدر ثباتي!',
+    s1l:'مصدر الثبات',s1v:'وجود شادية',s2l:'وعد العضلات',s2v:'قوة دائمة لأجلها',
+    cam:{x:0,y:0.8,z:2.8},tgt:{x:0,y:0.7,z:0.2}},
+  quads:{n:'العضلة الرباعية الرؤوس',la:'Quadriceps Femoris',ic:'🦵',sy:'الجهاز العضلي',sk:'muscles',
+    d:'أقوى مجموعة عضلية بأربعة رؤوس: المستقيمة الفخذية والمتسعات الثلاث.',
+    g:'يا شادية، هذه العضلات التي تحمل الجسد وتدفعه للمضي... أنا بكل خطوة لا أمشي إلا باتجاهكِ. لو الطريق إليكِ يمتد ألف سنة ضوئية... لمشيته راكضاً بلا تردد ولا كلل!',
+    s1l:'وجهة الخطوات',s1v:'نحو شادية فقط',s2l:'عدد الخطوات',s2v:'∞ خطوة لأجلها',
+    cam:{x:0.5,y:-0.5,z:3.5},tgt:{x:0,y:-0.8,z:0}},
+  calves:{n:'عضلة الساق الخلفية',la:'Gastrocnemius',ic:'🦶',sy:'الجهاز العضلي',sk:'muscles',
+    d:'عضلة بطنية ذات رأسين تشكل بروز بطة الساق وتدفع القدم عند المشي والقفز.',
+    g:'يا شادية، هذه العضلات تحملني نحوكِ في كل خطوة وكل قفزة أمل. ما تعبت قدماي يوماً وأنتِ الغاية... بل تزدادان خفة كلما اقتربت منكِ كأن الأرض تسهّل عليّ الطريق إليكِ!',
+    s1l:'الطريق المفضل',s1v:'طريق شادية',s2l:'ثبات القدم',s2v:'راسخة بحبكِ',
+    cam:{x:-0.8,y:-2,z:-2.5},tgt:{x:0,y:-2,z:0}},
+  pelvis:{n:'الحوض',la:'Pelvis',ic:'🦴',sy:'الهيكل العظمي',sk:'skeleton',
+    d:'حزام عظمي ضخم يربط العمود الفقري بالأطراف السفلية ويحمي أعضاء البطن السفلية.',
+    g:'يا شادية، كما يربط الحوض أعلى الجسد بأسفله ويوحّده... فإن حبكِ هو الذي يربط كل أجزاء حياتي ويمنحها المعنى والتماسك والتوازن. أنتِ قاعدة بنياني ومحور ارتكازي في هذا الوجود!',
+    s1l:'محور التوازن',s1v:'شادية',s2l:'رسالة العظام',s2v:'ثابت لأجلكِ أبداً',
+    cam:{x:0,y:0.1,z:3},tgt:{x:0,y:-0.1,z:0}},
+  liver:{n:'الكبد والمعدة',la:'Hepar & Gaster',ic:'🫀',sy:'الجهاز الهضمي',sk:'organs',
+    d:'الكبد أكبر عضو داخلي يقوم بأكثر من 500 وظيفة حيوية، والمعدة تهضم الغذاء بأحماضها.',
+    g:'يا شادية، هذا الكبد يُنقّي كل شيء إلا حبكِ... فحبكِ ليس سمّاً بل هو ترياق الحياة الذي أحتاجه! وهذه المعدة تجوع لكل شيء إلا لقربكِ... فأنا شبعان ما دمتِ بجواري يا حبيبتي!',
+    s1l:'ما لا يُنقّى',s1v:'حب شادية',s2l:'غذاء الروح',s2v:'قرب شادية',
+    cam:{x:0.8,y:0.9,z:2.8},tgt:{x:0.2,y:0.8,z:0}},
+  kidneys:{n:'الكليتان',la:'Renes',ic:'🫘',sy:'الجهاز البولي',sk:'organs',
+    d:'عضوان بشكل حبة الفاصولياء يرشحان 180 لتراً من الدم يومياً لتنقيته.',
+    g:'يا شادية، هاتان الكليتان ترشّحان الدم وتنقّيانه... لكنهما عاجزتان عن ترشيح حبكِ من عروقي! فحبكِ ليس شائبة بل هو أنقى ما يجري في دمي، وأصفى ما تحمله شراييني!',
+    s1l:'ما لا يُرشّح',s1v:'حب شادية',s2l:'نقاء الدم',s2v:'نقيٌّ بحبكِ',
+    cam:{x:-1,y:0.7,z:-2.5},tgt:{x:0,y:0.65,z:0}},
+};
+
+// =============================================
+// إعداد Three.js
+// =============================================
+const cn=document.getElementById('c3d');
+const sc=new THREE.Scene();
+sc.fog=new THREE.FogExp2(0x0a0810,0.035);
+
+function getFrameSize(){
+  const w = cn.clientWidth || 400;
+  const h = cn.clientHeight || 750;
+  return { w, h };
+}
+const fs = getFrameSize();
+const cam=new THREE.PerspectiveCamera(40, fs.w / fs.h, 0.1, 100);
+const iCP={x:0, y:0.25, z:10.8}, iCT={x:0, y:-0.15, z:0};
+cam.position.set(iCP.x, iCP.y, iCP.z);
+const ren=new THREE.WebGLRenderer({antialias:true, alpha:true, powerPreference:'high-performance'});
+ren.setSize(fs.w, fs.h);
+ren.setPixelRatio(Math.min(devicePixelRatio, 2));
+ren.shadowMap.enabled=true;
+ren.shadowMap.type=THREE.PCFSoftShadowMap;
+ren.toneMapping=THREE.ACESFilmicToneMapping;
+ren.toneMappingExposure=1.15;
+cn.appendChild(ren.domElement);
+const ctl=new THREE.OrbitControls(cam, ren.domElement);
+ctl.enableDamping=true; ctl.dampingFactor=0.06;
+ctl.target.set(iCT.x, iCT.y, iCT.z);
+ctl.maxDistance=16; ctl.minDistance=1.8; ctl.maxPolarAngle=Math.PI/2+0.08;
+
+// إضاءة سينمائية
+sc.add(new THREE.AmbientLight(0x1a1028,0.55));
+const kL=new THREE.DirectionalLight(0xfff8f0,1.15);kL.position.set(5,10,7);kL.castShadow=true;kL.shadow.mapSize.set(2048,2048);sc.add(kL);
+const rL=new THREE.DirectionalLight(0xff4081,1.5);rL.position.set(-6,4,-6);sc.add(rL);
+const fL=new THREE.DirectionalLight(0x80cbc4,0.35);fL.position.set(3,-2,5);sc.add(fL);
+const bkL=new THREE.DirectionalLight(0x7c4dff,0.3);bkL.position.set(0,2,-8);sc.add(bkL);
+const hGL=new THREE.PointLight(0xff1744,2.5,5);hGL.position.set(-0.12,1.55,0.25);sc.add(hGL);
+
+// =============================================
+// المواد التشريحية الواقعية (Écorché Materials)
+// =============================================
+// عضلات: ألياف حمراء قرمزية داكنة مع بريق رطب
+function musMat(c=0xb71c1c,r=0.38){
+  return new THREE.MeshStandardMaterial({color:c,roughness:r,metalness:0.15,
+    emissive:new THREE.Color(c).multiplyScalar(0.08),emissiveIntensity:0.2});
+}
+// أوتار: أبيض لؤلؤي لامع
+const tendonMat=new THREE.MeshStandardMaterial({color:0xf5f0e8,roughness:0.2,metalness:0.08});
+// عظام: عاجي فاتح مع خشونة سطحية
+const boneMat=new THREE.MeshStandardMaterial({color:0xf0e6d0,roughness:0.32,metalness:0.06});
+const boneDark=new THREE.MeshStandardMaterial({color:0xd4c8a8,roughness:0.35,metalness:0.06});
+// غضاريف: أزرق شفاف
+const cartMat=new THREE.MeshStandardMaterial({color:0x80deea,roughness:0.22,transparent:true,opacity:0.7});
+// القلب: أحمر غامق نابض
+const heartMat=new THREE.MeshStandardMaterial({color:0xc62828,roughness:0.2,metalness:0.2,emissive:0x880e4f,emissiveIntensity:0.5});
+// الرئتان: وردي إسفنجي
+const lungMat=new THREE.MeshStandardMaterial({color:0xef9a9a,roughness:0.45,transparent:true,opacity:0.8});
+// الدماغ: وردي رمادي مع تلافيف
+const brainMat=new THREE.MeshStandardMaterial({color:0xf48fb1,roughness:0.3,metalness:0.06,emissive:0x880e4f,emissiveIntensity:0.2});
+// شرايين وأوردة
+const artMat=new THREE.MeshStandardMaterial({color:0xd32f2f,roughness:0.28});
+const venMat=new THREE.MeshStandardMaterial({color:0x1976d2,roughness:0.28});
+// أعضاء داخلية
+const organMat=new THREE.MeshStandardMaterial({color:0x8d6e63,roughness:0.4,metalness:0.08});
+const kidneyMat=new THREE.MeshStandardMaterial({color:0x6d4c41,roughness:0.35,metalness:0.1});
+// العينان
+const eyeWMat=new THREE.MeshStandardMaterial({color:0xfafafa,roughness:0.12,metalness:0.05});
+const irisMat=new THREE.MeshStandardMaterial({color:0x5d4037,roughness:0.18,metalness:0.1});
+const pupilMat=new THREE.MeshStandardMaterial({color:0x0a0a0a,roughness:0.08});
+
+// =============================================
+// المنصة
+// =============================================
+const plat=new THREE.Group();
+const pY=-3.6;
+const bG=new THREE.CylinderGeometry(3.2,3.4,0.25,64);
+const bM=new THREE.MeshStandardMaterial({color:0x0e0a16,roughness:0.08,metalness:0.7});
+const bMs=new THREE.Mesh(bG,bM);bMs.position.y=pY;bMs.receiveShadow=true;plat.add(bMs);
+const rG=new THREE.TorusGeometry(3.2,0.018,16,128);
+const rM=new THREE.MeshBasicMaterial({color:0xff4081});
+const rMs=new THREE.Mesh(rG,rM);rMs.rotation.x=Math.PI/2;rMs.position.y=pY+0.14;plat.add(rMs);
+const haloG=new THREE.RingGeometry(0.08,3.2,64);
+const haloM=new THREE.MeshBasicMaterial({color:0xe91e63,transparent:true,opacity:0.06,side:THREE.DoubleSide});
+const haloMs=new THREE.Mesh(haloG,haloM);haloMs.rotation.x=-Math.PI/2;haloMs.position.y=pY+0.15;plat.add(haloMs);
+sc.add(plat);
+
+// جزيئات
+const ptC=350;const ptG=new THREE.BufferGeometry();const ptP=new Float32Array(ptC*3);
+for(let i=0;i<ptC*3;i+=3){ptP[i]=(Math.random()-0.5)*14;ptP[i+1]=Math.random()*10-4.5;ptP[i+2]=(Math.random()-0.5)*14;}
+ptG.setAttribute('position',new THREE.BufferAttribute(ptP,3));
+const ptM=new THREE.PointsMaterial({color:0xff80ab,size:0.035,transparent:true,opacity:0.45,blending:THREE.AdditiveBlending});
+const pts=new THREE.Points(ptG,ptM);sc.add(pts);
+
+// =============================================
+// بناء المجسم التشريحي الكلاسيكي (Écorché)
+// =============================================
+const bd=new THREE.Group();sc.add(bd);
+const skelG=new THREE.Group();
+const orgG=new THREE.Group();
+const musG=new THREE.Group();
+const vesG=new THREE.Group();
+bd.add(skelG,orgG,musG,vesG);
+
+const IX=[];
+function R(m,id){m.userData={partId:id};m.castShadow=true;m.receiveShadow=true;IX.push(m);}
+
+// أداة مساعدة لإنشاء أنبوب عضلي مع ألياف (Muscle Fiber Bundle)
+function makeFiberBundle(pts,radius,segments,mat,partId,parent,fiberCount=5){
+  const curve=new THREE.CatmullRomCurve3(pts);
+  // الأنبوب الرئيسي
+  const tubeGeo=new THREE.TubeGeometry(curve,segments,radius,12,false);
+  const mesh=new THREE.Mesh(tubeGeo,mat.clone());
+  R(mesh,partId);
+  parent.add(mesh);
+  // ألياف عضلية فرعية حول المركز
+  for(let f=0;f<fiberCount;f++){
+    const angle=(f/fiberCount)*Math.PI*2;
+    const offX=Math.cos(angle)*radius*0.6;
+    const offZ=Math.sin(angle)*radius*0.6;
+    const fPts=pts.map(p=>new THREE.Vector3(p.x+offX,p.y,p.z+offZ));
+    const fCurve=new THREE.CatmullRomCurve3(fPts);
+    const fGeo=new THREE.TubeGeometry(fCurve,segments,radius*0.2,6,false);
+    const fMat=mat.clone();fMat.color.offsetHSL(0,0,(Math.random()-0.5)*0.06);
+    const fMesh=new THREE.Mesh(fGeo,fMat);
+    R(fMesh,partId);
+    parent.add(fMesh);
+  }
+}
+
+// أداة مساعدة لإنشاء وتر بين نقطتين
+function makeTendon(pts,radius,parent,partId){
+  const curve=new THREE.CatmullRomCurve3(pts);
+  const geo=new THREE.TubeGeometry(curve,12,radius,8,false);
+  const mesh=new THREE.Mesh(geo,tendonMat.clone());
+  if(partId) R(mesh,partId);
+  parent.add(mesh);
+}
+
+// ==== أ. الجمجمة والوجه (Skull & Face) ====
+const skullG2=new THREE.Group();skullG2.position.set(0,2.85,0);
+
+// قبة الجمجمة العظمية
+const cranGeo=new THREE.SphereGeometry(0.5,40,32);cranGeo.scale(0.9,1.1,1.15);
+const cran=new THREE.Mesh(cranGeo,boneMat.clone());cran.position.set(0,0.05,-0.05);R(cran,'skull');skullG2.add(cran);
+
+// الدروز العظمية (Cranial Sutures) - خطوط على سطح الجمجمة
+[{pts:[new THREE.Vector3(0,0.4,0.2),new THREE.Vector3(0,0.55,0),new THREE.Vector3(0,0.4,-0.3)],r:0.008},
+ {pts:[new THREE.Vector3(-0.35,0.2,0),new THREE.Vector3(0,0.55,0),new THREE.Vector3(0.35,0.2,0)],r:0.008}
+].forEach(s=>{
+  const c=new THREE.CatmullRomCurve3(s.pts);
+  const g=new THREE.TubeGeometry(c,16,s.r,6,false);
+  skullG2.add(new THREE.Mesh(g,boneDark));
+});
+
+// محجر العينين (Eye Sockets)
+const sockMat=new THREE.MeshStandardMaterial({color:0x1a0a12,roughness:0.9});
+[-1,1].forEach(s=>{
+  const sGeo=new THREE.TorusGeometry(0.12,0.028,14,20);
+  const sMesh=new THREE.Mesh(sGeo,boneDark.clone());
+  sMesh.position.set(s*0.2,-0.06,0.44);R(sMesh,'skull');skullG2.add(sMesh);
+  // تجويف داكن
+  const cGeo=new THREE.CircleGeometry(0.1,20);
+  const cMesh=new THREE.Mesh(cGeo,sockMat);
+  cMesh.position.set(s*0.2,-0.06,0.43);skullG2.add(cMesh);
+});
+
+// الأنف العظمي
+const nBGeo=new THREE.BoxGeometry(0.06,0.12,0.06);
+const nB=new THREE.Mesh(nBGeo,boneMat.clone());nB.position.set(0,-0.12,0.48);R(nB,'skull');skullG2.add(nB);
+// فتحة الأنف
+const nHGeo=new THREE.CircleGeometry(0.05,16);
+const nH=new THREE.Mesh(nHGeo,sockMat);nH.position.set(0,-0.2,0.5);skullG2.add(nH);
+
+// عظام الخد (Zygomatic)
+[-1,1].forEach(s=>{
+  const zGeo=new THREE.SphereGeometry(0.08,12,10);zGeo.scale(1.2,0.7,0.8);
+  const z=new THREE.Mesh(zGeo,boneMat.clone());
+  z.position.set(s*0.32,-0.1,0.35);R(z,'skull');skullG2.add(z);
+});
+
+// الفك السفلي (Mandible)
+const jawGeo=new THREE.TorusGeometry(0.25,0.04,12,20,Math.PI);
+const jaw=new THREE.Mesh(jawGeo,boneMat.clone());
+jaw.position.set(0,-0.3,0.22);jaw.rotation.x=0.2;R(jaw,'skull');skullG2.add(jaw);
+
+// الأسنان
+for(let t=0;t<8;t++){
+  const angle=-Math.PI*0.4 + t*(Math.PI*0.8/7);
+  const tGeo=new THREE.BoxGeometry(0.025,0.035,0.015);
+  const tMesh=new THREE.Mesh(tGeo,new THREE.MeshStandardMaterial({color:0xfff8e1,roughness:0.15}));
+  tMesh.position.set(Math.sin(angle)*0.2,-0.22,0.22+Math.cos(angle)*0.2);
+  skullG2.add(tMesh);
+}
+
+skelG.add(skullG2);
+
+// ==== العينان الواقعيتان ====
+[-1,1].forEach(s=>{
+  const eGeo=new THREE.SphereGeometry(0.085,28,22);
+  const e=new THREE.Mesh(eGeo,eyeWMat.clone());
+  e.position.set(s*0.2,2.79,0.42+2.85-2.85);
+  // تصحيح الموقع
+  e.position.set(s*0.2,2.79,0.42);
+  R(e,'eyes');bd.add(e);
+  const iG=new THREE.CircleGeometry(0.05,28);
+  const iris=new THREE.Mesh(iG,irisMat.clone());
+  iris.position.set(s*0.2,2.79,0.505);bd.add(iris);
+  const pG2=new THREE.CircleGeometry(0.022,20);
+  const pup=new THREE.Mesh(pG2,pupilMat);
+  pup.position.set(s*0.2,2.79,0.508);bd.add(pup);
+});
+
+// ==== الدماغ ====
+const brG=new THREE.Group();brG.position.set(0,2.92,-0.02);
+[-1,1].forEach(s=>{
+  const hGeo=new THREE.SphereGeometry(0.22,32,28);hGeo.scale(0.78,0.95,1.1);
+  const h=new THREE.Mesh(hGeo,brainMat.clone());h.position.set(s*0.13,0.02,0);R(h,'brain');brG.add(h);
+});
+// تلافيف الدماغ (Gyri) - نتوءات واقعية
+for(let g=0;g<60;g++){
+  const th=Math.random()*Math.PI*2;const ph=Math.random()*Math.PI*0.65+0.2;
+  const r=0.2+Math.random()*0.04;
+  const gx=r*Math.sin(ph)*Math.cos(th);const gy=r*Math.cos(ph)+0.02;const gz=r*Math.sin(ph)*Math.sin(th);
+  const gGeo=new THREE.SphereGeometry(0.022+Math.random()*0.015,6,6);
+  const gm=new THREE.Mesh(gGeo,brainMat.clone());gm.position.set(gx,gy,gz);brG.add(gm);
+}
+// المخيخ
+const ceGeo=new THREE.SphereGeometry(0.14,14,14);ceGeo.scale(1.1,0.6,0.8);
+const ce=new THREE.Mesh(ceGeo,brainMat.clone());ce.position.set(0,-0.12,-0.18);R(ce,'brain');brG.add(ce);
+// جذع الدماغ
+const bsGeo=new THREE.CylinderGeometry(0.04,0.05,0.18,10);
+const bs=new THREE.Mesh(bsGeo,brainMat.clone());bs.position.set(0,-0.2,-0.08);brG.add(bs);
+// ومضات عصبية
+const snC=150;const snG=new THREE.BufferGeometry();const snP=new Float32Array(snC*3);
+for(let i=0;i<snC*3;i+=3){snP[i]=(Math.random()-0.5)*0.4;snP[i+1]=(Math.random()-0.5)*0.3+0.02;snP[i+2]=(Math.random()-0.5)*0.42;}
+snG.setAttribute('position',new THREE.BufferAttribute(snP,3));
+const snM=new THREE.PointsMaterial({color:0xffffff,size:0.025,transparent:true,opacity:0.75,blending:THREE.AdditiveBlending});
+const snPts=new THREE.Points(snG,snM);brG.add(snPts);
+orgG.add(brG);
+
+// ==== الرقبة - عضلات SCM ====
+[-1,1].forEach(s=>{
+  makeFiberBundle([
+    new THREE.Vector3(s*0.05,2.55,-0.08),
+    new THREE.Vector3(s*0.15,2.35,0.05),
+    new THREE.Vector3(s*0.28,2.15,0.1),
+    new THREE.Vector3(s*0.35,2.0,0.08)
+  ],0.04,16,musMat(0xb71c1c),'neck',musG,4);
+});
+// القصبة الهوائية
+const trGeo=new THREE.CylinderGeometry(0.03,0.03,0.5,14);
+const trM=new THREE.Mesh(trGeo,cartMat);trM.position.set(0,2.2,0.2);R(trM,'neck');orgG.add(trM);
+
+// ==== العمود الفقري المفصل ====
+for(let i=0;i<28;i++){
+  const t=i/27;const y=0.05+t*2.25;
+  let zC=0;
+  if(t<0.33)zC=Math.sin(t/0.33*Math.PI)*0.07;
+  else if(t<0.78)zC=-Math.sin((t-0.33)/0.45*Math.PI)*0.11;
+  else zC=Math.sin((t-0.78)/0.22*Math.PI)*0.055;
+  const vS=0.09-t*0.02;
+  const vG=new THREE.CylinderGeometry(vS,vS*1.04,0.05,14);
+  const vm=new THREE.Mesh(vG,boneMat.clone());vm.position.set(0,y,zC-0.15);R(vm,'spine');skelG.add(vm);
+  // نتوء شوكي
+  const spGeo=new THREE.ConeGeometry(0.025,0.1,6);spGeo.rotateX(-Math.PI/2.5);
+  const sp=new THREE.Mesh(spGeo,boneMat.clone());sp.position.set(0,y,zC-0.22);skelG.add(sp);
+  // نتوءات مستعرضة
+  [-1,1].forEach(s=>{
+    const tpGeo=new THREE.CylinderGeometry(0.012,0.012,0.08,6);tpGeo.rotateZ(Math.PI/2);
+    const tp=new THREE.Mesh(tpGeo,boneMat.clone());
+    tp.position.set(s*0.08,y,zC-0.17);skelG.add(tp);
+  });
+  if(i<27){
+    const dG2=new THREE.CylinderGeometry(vS*0.8,vS*0.8,0.012,10);
+    const dm=new THREE.Mesh(dG2,cartMat);dm.position.set(0,y+0.033,zC-0.15);skelG.add(dm);
+  }
+}
+
+// ==== القفص الصدري (12 زوج أضلاع مع تفاصيل) ====
+for(let r=0;r<12;r++){
+  const rT=r/11;const rY=2.08-rT*0.88;
+  const rR=0.52+Math.sin(rT*Math.PI)*0.32;
+  const rD=0.38+Math.sin(rT*Math.PI)*0.22;
+  [-1,1].forEach(s=>{
+    const curveP=[
+      new THREE.Vector3(s*0.07,rY+0.04,-0.12),
+      new THREE.Vector3(s*(rR*0.85),rY,-0.1),
+      new THREE.Vector3(s*rR,rY-0.06,rD*0.4),
+      new THREE.Vector3(s*(rR*0.68),rY-0.13,rD),
+      new THREE.Vector3(s*0.1,rY-0.16,rD+0.05)
+    ];
+    const curve=new THREE.CatmullRomCurve3(curveP);
+    const ribGeo=new THREE.TubeGeometry(curve,28,0.016,8,false);
+    const rib=new THREE.Mesh(ribGeo,boneMat.clone());R(rib,'ribcage');skelG.add(rib);
+    // غضروف ضلعي (أمامي)
+    if(r<7){
+      const cartP=[curveP[3],curveP[4]];
+      const cartC=new THREE.CatmullRomCurve3(cartP);
+      const cartG=new THREE.TubeGeometry(cartC,8,0.01,6,false);
+      skelG.add(new THREE.Mesh(cartG,cartMat));
+    }
+  });
+}
+// عظم القص
+const stGeo=new THREE.BoxGeometry(0.12,0.75,0.04,1,4,1);
+const st=new THREE.Mesh(stGeo,boneMat.clone());st.position.set(0,1.62,0.5);R(st,'ribcage');skelG.add(st);
+// الناتئ الخنجري (Xiphoid)
+const xiGeo=new THREE.ConeGeometry(0.03,0.1,8);xiGeo.rotateX(Math.PI);
+const xi=new THREE.Mesh(xiGeo,boneMat.clone());xi.position.set(0,1.22,0.5);skelG.add(xi);
+// الترقوة
+[-1,1].forEach(s=>{
+  const clP=[new THREE.Vector3(s*0.06,2.12,0.46),new THREE.Vector3(s*0.5,2.15,0.35),new THREE.Vector3(s*0.9,2.08,0.12)];
+  const clC=new THREE.CatmullRomCurve3(clP);
+  const clG=new THREE.TubeGeometry(clC,14,0.028,8,false);
+  const cl=new THREE.Mesh(clG,boneMat.clone());R(cl,'ribcage');skelG.add(cl);
+});
+// لوح الكتف (Scapula)
+[-1,1].forEach(s=>{
+  const scGeo=new THREE.SphereGeometry(0.22,16,14);scGeo.scale(0.8,1.3,0.3);
+  const scM=new THREE.Mesh(scGeo,boneMat.clone());
+  scM.position.set(s*0.7,1.85,-0.2);R(scM,'deltoids');skelG.add(scM);
+});
+
+// ==== الحوض ====
+[-1,1].forEach(s=>{
+  const ilGeo=new THREE.TorusGeometry(0.35,0.09,14,22,Math.PI*1.1);
+  ilGeo.rotateZ(s*0.35);ilGeo.rotateY(s*0.25);
+  const il=new THREE.Mesh(ilGeo,boneMat.clone());il.position.set(s*0.38,0.06,-0.04);R(il,'pelvis');skelG.add(il);
+});
+const sacGeo=new THREE.ConeGeometry(0.2,0.35,14);sacGeo.rotateX(Math.PI);
+const sac=new THREE.Mesh(sacGeo,boneMat.clone());sac.position.set(0,0,-0.1);R(sac,'pelvis');skelG.add(sac);
+
+// ==== عظام الأطراف ====
+[-1,1].forEach(s=>{
+  // عضد
+  const humGeo=new THREE.CylinderGeometry(0.035,0.042,0.88,12);
+  const hum=new THREE.Mesh(humGeo,boneMat.clone());hum.position.set(s*1.0,1.48,0);R(hum,'biceps');skelG.add(hum);
+  // كعبرة وزند
+  const radGeo=new THREE.CylinderGeometry(0.025,0.02,0.8,10);
+  const rad=new THREE.Mesh(radGeo,boneMat.clone());rad.position.set(s*1.08,0.6,0.04);skelG.add(rad);
+  const ulnGeo=new THREE.CylinderGeometry(0.028,0.022,0.82,10);
+  const uln=new THREE.Mesh(ulnGeo,boneMat.clone());uln.position.set(s*1.04,0.58,-0.02);skelG.add(uln);
+  // فخذ
+  const femGeo=new THREE.CylinderGeometry(0.06,0.065,1.4,14);
+  const fem=new THREE.Mesh(femGeo,boneMat.clone());fem.position.set(s*0.38,-0.85,0);R(fem,'quads');skelG.add(fem);
+  // رضفة
+  const patGeo=new THREE.SphereGeometry(0.06,14,12);patGeo.scale(1,1,0.55);
+  const pat=new THREE.Mesh(patGeo,boneMat.clone());pat.position.set(s*0.38,-1.6,0.14);skelG.add(pat);
+  // ظنبوب وشظية
+  const tibGeo=new THREE.CylinderGeometry(0.048,0.035,1.3,12);
+  const tib=new THREE.Mesh(tibGeo,boneMat.clone());tib.position.set(s*0.38,-2.35,0.02);skelG.add(tib);
+  const fibGeo=new THREE.CylinderGeometry(0.018,0.014,1.25,8);
+  const fib=new THREE.Mesh(fibGeo,boneMat.clone());fib.position.set(s*0.44,-2.35,-0.02);skelG.add(fib);
+  // قدم
+  const ftGeo=new THREE.BoxGeometry(0.14,0.07,0.35,3,1,3);
+  const ft=new THREE.Mesh(ftGeo,boneMat.clone());ft.position.set(s*0.38,-3.02,0.1);skelG.add(ft);
+});
+
+// ==== يدان بأصابع وأوتار ====
+[-1,1].forEach(s=>{
+  // عظام الرسغ
+  for(let c=0;c<4;c++){
+    const cG=new THREE.BoxGeometry(0.03,0.03,0.03);
+    const cM=new THREE.Mesh(cG,boneMat.clone());
+    cM.position.set(s*(1.04+c*0.015),0.12,0.02+c*0.008);skelG.add(cM);
+  }
+  // مشط اليد والأصابع
+  for(let f=0;f<5;f++){
+    const baseX=s*(0.99+f*0.028);
+    const baseZ=0.02+(f-2)*0.012;
+    // مشط
+    const mcGeo=new THREE.CylinderGeometry(0.012,0.01,0.1,6);
+    const mc=new THREE.Mesh(mcGeo,boneMat.clone());
+    mc.position.set(baseX,0.02,baseZ);skelG.add(mc);
+    // سلاميات (3 مفاصل)
+    for(let ph=0;ph<3;ph++){
+      const phLen=0.06-ph*0.012;
+      const phGeo=new THREE.CylinderGeometry(0.008-ph*0.001,0.008-ph*0.001,phLen,6);
+      const phM=new THREE.Mesh(phGeo,boneMat.clone());
+      phM.position.set(baseX,-0.05-ph*0.06,baseZ);
+      R(phM,'hands');skelG.add(phM);
+    }
+    // وتر الإصبع
+    makeTendon([
+      new THREE.Vector3(baseX,0.08,baseZ+0.015),
+      new THREE.Vector3(baseX,-0.02,baseZ+0.015),
+      new THREE.Vector3(baseX,-0.18,baseZ+0.015)
+    ],0.004,musG,'hands');
+  }
+});
+
+// ==== القلب النابض بتفاصيل ====
+const htG=new THREE.Group();htG.position.set(-0.12,1.55,0.18);htG.rotation.z=0.22;
+const vtGeo=new THREE.SphereGeometry(0.2,30,26);vtGeo.scale(0.85,1.2,0.88);
+const vt=new THREE.Mesh(vtGeo,heartMat.clone());R(vt,'heart');htG.add(vt);
+const apGeo=new THREE.ConeGeometry(0.16,0.28,22);apGeo.rotateX(Math.PI);
+const ap=new THREE.Mesh(apGeo,heartMat.clone());ap.position.set(0,-0.2,0);R(ap,'heart');htG.add(ap);
+// الأبهر
+const aoP=[new THREE.Vector3(0,0.18,0),new THREE.Vector3(0.08,0.4,0),new THREE.Vector3(0,0.46,-0.05),new THREE.Vector3(-0.06,0.34,-0.08)];
+const aoC=new THREE.CatmullRomCurve3(aoP);htG.add(new THREE.Mesh(new THREE.TubeGeometry(aoC,16,0.04,10,false),artMat));
+// الشريان الرئوي
+const paP=[new THREE.Vector3(0.05,0.16,0.05),new THREE.Vector3(0.12,0.32,0.08),new THREE.Vector3(0.18,0.35,-0.02)];
+const paC=new THREE.CatmullRomCurve3(paP);htG.add(new THREE.Mesh(new THREE.TubeGeometry(paC,12,0.03,8,false),artMat.clone()));
+// الأوردة الرئوية
+[-0.08,0.04].forEach(z=>{
+  const vpP=[new THREE.Vector3(-0.08,0.15,z),new THREE.Vector3(-0.2,0.28,z-0.05)];
+  const vpC=new THREE.CatmullRomCurve3(vpP);htG.add(new THREE.Mesh(new THREE.TubeGeometry(vpC,8,0.02,6,false),venMat));
+});
+// الشرايين التاجية
+const corP=[new THREE.Vector3(0,0.1,0.15),new THREE.Vector3(0.12,0,0.12),new THREE.Vector3(0.1,-0.15,0.08)];
+const corC=new THREE.CatmullRomCurve3(corP);htG.add(new THREE.Mesh(new THREE.TubeGeometry(corC,12,0.01,6,false),artMat.clone()));
+orgG.add(htG);
+
+// ==== الرئتان مع فصوص ====
+const luG=new THREE.Group();luG.position.set(0,1.55,0.08);
+// رئة يمنى (3 فصوص)
+[{y:0.15,s:0.82},{y:-0.05,s:0.78},{y:-0.22,s:0.65}].forEach((l,i)=>{
+  const lGeo=new THREE.SphereGeometry(0.22,22,18);lGeo.scale(0.75,0.55,0.8);
+  const lM=new THREE.Mesh(lGeo,lungMat.clone());lM.position.set(0.42,l.y,0);
+  lM.scale.multiplyScalar(l.s);R(lM,'lungs');luG.add(lM);
+});
+// رئة يسرى (2 فصوص)
+[{y:0.1,s:0.78},{y:-0.15,s:0.72}].forEach((l,i)=>{
+  const lGeo=new THREE.SphereGeometry(0.2,22,18);lGeo.scale(0.7,0.6,0.75);
+  const lM=new THREE.Mesh(lGeo,lungMat.clone());lM.position.set(-0.4,l.y,0);
+  lM.scale.multiplyScalar(l.s);R(lM,'lungs');luG.add(lM);
+});
+// القصبات الهوائية
+const brPts=[[new THREE.Vector3(0,0.4,-0.04),new THREE.Vector3(0.15,0.1,0),new THREE.Vector3(0.35,0,0.02)],
+             [new THREE.Vector3(0,0.4,-0.04),new THREE.Vector3(-0.12,0.1,0),new THREE.Vector3(-0.32,0,0.02)]];
+brPts.forEach(pts=>{
+  const c=new THREE.CatmullRomCurve3(pts);
+  luG.add(new THREE.Mesh(new THREE.TubeGeometry(c,12,0.02,8,false),cartMat));
+});
+orgG.add(luG);
+
+// ==== الكبد والمعدة والأمعاء ====
+const livGeo=new THREE.SphereGeometry(0.35,24,20);livGeo.scale(1.3,0.6,0.7);
+const liv=new THREE.Mesh(livGeo,organMat.clone());liv.position.set(0.25,0.85,0.2);R(liv,'liver');orgG.add(liv);
+
+const stoGeo=new THREE.SphereGeometry(0.18,18,14);stoGeo.scale(1.0,1.2,0.7);
+const sto=new THREE.Mesh(stoGeo,new THREE.MeshStandardMaterial({color:0xc5917a,roughness:0.4}));
+sto.position.set(-0.15,0.78,0.18);R(sto,'liver');orgG.add(sto);
+
+// الأمعاء (حلزونية)
+const intPts=[];
+for(let i=0;i<40;i++){
+  const t=i/39;
+  intPts.push(new THREE.Vector3(Math.sin(t*12)*0.15*(1-t*0.5),0.2-t*0.6,Math.cos(t*12)*0.12*(1-t*0.5)+0.15));
+}
+const intC=new THREE.CatmullRomCurve3(intPts);
+const intGeo=new THREE.TubeGeometry(intC,60,0.03,8,false);
+orgG.add(new THREE.Mesh(intGeo,new THREE.MeshStandardMaterial({color:0xd4a08a,roughness:0.5})));
+
+// ==== الكليتان ====
+[-1,1].forEach(s=>{
+  const kGeo=new THREE.SphereGeometry(0.1,16,14);kGeo.scale(0.7,1.1,0.6);
+  const k=new THREE.Mesh(kGeo,kidneyMat.clone());
+  k.position.set(s*0.3,0.65,-0.18);R(k,'kidneys');orgG.add(k);
+});
+
+// ==== شبكة الأوعية الدموية (شرايين وأوردة) ====
+// الأبهر الهابط
+const daoP=[new THREE.Vector3(0,1.8,0.05),new THREE.Vector3(0.03,1.2,-0.05),new THREE.Vector3(0.02,0.5,-0.08),new THREE.Vector3(0.05,0,-0.1)];
+const daoC=new THREE.CatmullRomCurve3(daoP);vesG.add(new THREE.Mesh(new THREE.TubeGeometry(daoC,24,0.03,10,false),artMat));
+// الوريد الأجوف
+const vcP=[new THREE.Vector3(-0.03,1.9,0.05),new THREE.Vector3(-0.04,1.2,-0.05),new THREE.Vector3(-0.04,0.5,-0.08),new THREE.Vector3(-0.06,0,-0.1)];
+const vcC=new THREE.CatmullRomCurve3(vcP);vesG.add(new THREE.Mesh(new THREE.TubeGeometry(vcC,24,0.028,10,false),venMat));
+// الشرايين السباتية
+[-1,1].forEach(s=>{
+  const caP=[new THREE.Vector3(s*0.04,1.8,0.08),new THREE.Vector3(s*0.08,2.2,0.12),new THREE.Vector3(s*0.12,2.6,0.15)];
+  const caC=new THREE.CatmullRomCurve3(caP);vesG.add(new THREE.Mesh(new THREE.TubeGeometry(caC,12,0.015,6,false),artMat.clone()));
+});
+// شرايين وأوردة الأطراف
+[-1,1].forEach(s=>{
+  // ذراع
+  const armAP=[new THREE.Vector3(s*0.6,1.9,0.1),new THREE.Vector3(s*0.9,1.5,0.08),new THREE.Vector3(s*1.0,0.8,0.06),new THREE.Vector3(s*1.05,0.1,0.04)];
+  const armAC=new THREE.CatmullRomCurve3(armAP);vesG.add(new THREE.Mesh(new THREE.TubeGeometry(armAC,16,0.012,6,false),artMat.clone()));
+  // ساق
+  const legAP=[new THREE.Vector3(s*0.25,0,0),new THREE.Vector3(s*0.35,-0.8,0.04),new THREE.Vector3(s*0.38,-1.8,0.06),new THREE.Vector3(s*0.38,-2.8,0.04)];
+  const legAC=new THREE.CatmullRomCurve3(legAP);vesG.add(new THREE.Mesh(new THREE.TubeGeometry(legAC,16,0.014,6,false),artMat.clone()));
+  const legVP=legAP.map(p=>new THREE.Vector3(p.x-s*0.04,p.y,p.z-0.03));
+  const legVC=new THREE.CatmullRomCurve3(legVP);vesG.add(new THREE.Mesh(new THREE.TubeGeometry(legVC,16,0.012,6,false),venMat.clone()));
+});
+
+// ==== العضلات المكشوفة بألياف (Écorché Muscles) ====
+
+// عضلة الصدر الكبرى مع ألياف مروحية
+[-1,1].forEach(s=>{
+  makeFiberBundle([
+    new THREE.Vector3(s*0.1,1.85,0.42),
+    new THREE.Vector3(s*0.35,1.72,0.48),
+    new THREE.Vector3(s*0.6,1.6,0.38),
+    new THREE.Vector3(s*0.82,1.55,0.18)
+  ],0.06,20,musMat(0xc62828,0.35),'pectorals',musG,6);
+  makeFiberBundle([
+    new THREE.Vector3(s*0.08,1.55,0.44),
+    new THREE.Vector3(s*0.3,1.5,0.46),
+    new THREE.Vector3(s*0.55,1.45,0.35),
+    new THREE.Vector3(s*0.78,1.45,0.15)
+  ],0.05,18,musMat(0xb71c1c,0.38),'pectorals',musG,5);
+});
+
+// العضلة الدالية مع ألياف
+[-1,1].forEach(s=>{
+  makeFiberBundle([
+    new THREE.Vector3(s*0.55,2.12,0.35),
+    new THREE.Vector3(s*0.85,2.1,0.1),
+    new THREE.Vector3(s*0.95,1.95,0.02),
+    new THREE.Vector3(s*0.92,1.75,0.05)
+  ],0.065,18,musMat(0xc62828,0.36),'deltoids',musG,5);
+  // الجزء الخلفي
+  makeFiberBundle([
+    new THREE.Vector3(s*0.65,2.0,-0.15),
+    new THREE.Vector3(s*0.88,1.95,-0.05),
+    new THREE.Vector3(s*0.95,1.8,0.02)
+  ],0.04,14,musMat(0xa71515,0.4),'deltoids',musG,3);
+});
+
+// العضلة ذات الرأسين (Biceps) مع ألياف
+[-1,1].forEach(s=>{
+  makeFiberBundle([
+    new THREE.Vector3(s*0.92,1.85,0.12),
+    new THREE.Vector3(s*0.96,1.55,0.16),
+    new THREE.Vector3(s*0.98,1.28,0.14),
+    new THREE.Vector3(s*1.0,1.05,0.1)
+  ],0.055,18,musMat(0xd32f2f,0.34),'biceps',musG,5);
+  // Triceps خلفية
+  makeFiberBundle([
+    new THREE.Vector3(s*0.92,1.82,-0.06),
+    new THREE.Vector3(s*0.96,1.55,-0.05),
+    new THREE.Vector3(s*0.98,1.28,-0.04),
+    new THREE.Vector3(s*1.0,1.08,-0.02)
+  ],0.045,16,musMat(0xb71c1c,0.4),'biceps',musG,4);
+  // وتر الباي الأبيض
+  makeTendon([
+    new THREE.Vector3(s*1.0,1.05,0.1),
+    new THREE.Vector3(s*1.02,0.98,0.08)
+  ],0.012,musG,'biceps');
+  // عضلات الساعد
+  makeFiberBundle([
+    new THREE.Vector3(s*1.02,1.0,0.08),
+    new THREE.Vector3(s*1.06,0.7,0.1),
+    new THREE.Vector3(s*1.08,0.4,0.08),
+    new THREE.Vector3(s*1.06,0.15,0.06)
+  ],0.04,16,musMat(0xc62828,0.38),'hands',musG,4);
+});
+
+// عضلات البطن المستقيمة مع أوتار بينية
+for(let r=0;r<4;r++){
+  [-1,1].forEach(c=>{
+    const y0=1.12-r*0.2;
+    makeFiberBundle([
+      new THREE.Vector3(c*0.1,y0+0.08,0.38),
+      new THREE.Vector3(c*0.1,y0,0.4),
+      new THREE.Vector3(c*0.1,y0-0.08,0.38)
+    ],0.04,10,musMat(0xc62828,0.36),'abs',musG,3);
+  });
+  // وتر أفقي بين الحزم
+  makeTendon([
+    new THREE.Vector3(-0.16,1.12-r*0.2-0.01,0.42),
+    new THREE.Vector3(0,1.12-r*0.2,0.44),
+    new THREE.Vector3(0.16,1.12-r*0.2-0.01,0.42)
+  ],0.008,musG,'abs');
+}
+// الخط الأبيض (Linea Alba)
+makeTendon([
+  new THREE.Vector3(0,1.2,0.42),
+  new THREE.Vector3(0,0.85,0.44),
+  new THREE.Vector3(0,0.5,0.4)
+],0.008,musG,'abs');
+// العضلة المائلة الخارجية
+[-1,1].forEach(s=>{
+  makeFiberBundle([
+    new THREE.Vector3(s*0.45,1.5,0.3),
+    new THREE.Vector3(s*0.35,1.15,0.38),
+    new THREE.Vector3(s*0.2,0.8,0.35)
+  ],0.04,14,musMat(0xa71515,0.42),'abs',musG,3);
+});
+
+// عضلة الفخذ الرباعية (4 رؤوس مع ألياف)
+[-1,1].forEach(s=>{
+  // Rectus Femoris
+  makeFiberBundle([
+    new THREE.Vector3(s*0.35,-0.12,0.12),
+    new THREE.Vector3(s*0.36,-0.5,0.16),
+    new THREE.Vector3(s*0.37,-0.95,0.18),
+    new THREE.Vector3(s*0.38,-1.35,0.16),
+    new THREE.Vector3(s*0.38,-1.55,0.12)
+  ],0.055,22,musMat(0xd32f2f,0.34),'quads',musG,6);
+  // Vastus Lateralis
+  makeFiberBundle([
+    new THREE.Vector3(s*0.5,-0.2,0.05),
+    new THREE.Vector3(s*0.5,-0.6,0.1),
+    new THREE.Vector3(s*0.48,-1.1,0.12),
+    new THREE.Vector3(s*0.44,-1.5,0.1)
+  ],0.045,18,musMat(0xb71c1c,0.38),'quads',musG,4);
+  // Vastus Medialis (الدمعة فوق الركبة)
+  makeFiberBundle([
+    new THREE.Vector3(s*0.25,-0.6,0.08),
+    new THREE.Vector3(s*0.28,-1.0,0.14),
+    new THREE.Vector3(s*0.32,-1.4,0.14),
+    new THREE.Vector3(s*0.35,-1.55,0.1)
+  ],0.04,16,musMat(0xc62828,0.36),'quads',musG,4);
+  // وتر الرضفة (Patellar Tendon)
+  makeTendon([
+    new THREE.Vector3(s*0.38,-1.5,0.14),
+    new THREE.Vector3(s*0.38,-1.62,0.14),
+    new THREE.Vector3(s*0.38,-1.72,0.1)
+  ],0.015,musG,'quads');
+  // Hamstrings خلفية
+  makeFiberBundle([
+    new THREE.Vector3(s*0.35,-0.15,-0.1),
+    new THREE.Vector3(s*0.36,-0.6,-0.08),
+    new THREE.Vector3(s*0.37,-1.1,-0.06),
+    new THREE.Vector3(s*0.38,-1.5,-0.04)
+  ],0.045,18,musMat(0xa71515,0.4),'quads',musG,4);
+
+  // بطة الساق (Gastrocnemius)
+  makeFiberBundle([
+    new THREE.Vector3(s*0.4,-1.65,-0.04),
+    new THREE.Vector3(s*0.42,-2.0,0.02),
+    new THREE.Vector3(s*0.4,-2.35,0),
+    new THREE.Vector3(s*0.38,-2.65,-0.02)
+  ],0.045,18,musMat(0xc62828,0.36),'calves',musG,5);
+  // وتر أخيل (Achilles Tendon)
+  makeTendon([
+    new THREE.Vector3(s*0.38,-2.6,-0.02),
+    new THREE.Vector3(s*0.38,-2.8,-0.04),
+    new THREE.Vector3(s*0.38,-2.95,-0.02)
+  ],0.012,musG,'calves');
+  // عضلة الساق الأمامية (Tibialis Anterior)
+  makeFiberBundle([
+    new THREE.Vector3(s*0.35,-1.7,0.1),
+    new THREE.Vector3(s*0.36,-2.1,0.1),
+    new THREE.Vector3(s*0.36,-2.5,0.08),
+    new THREE.Vector3(s*0.37,-2.85,0.1)
+  ],0.03,14,musMat(0xb71c1c,0.4),'calves',musG,3);
+});
+
+// عضلة الظهر العريضة (Latissimus Dorsi)
+[-1,1].forEach(s=>{
+  makeFiberBundle([
+    new THREE.Vector3(s*0.15,0.6,-0.16),
+    new THREE.Vector3(s*0.4,1.0,-0.18),
+    new THREE.Vector3(s*0.65,1.4,-0.15),
+    new THREE.Vector3(s*0.85,1.7,-0.08)
+  ],0.05,18,musMat(0xa71515,0.42),'spine',musG,4);
+});
+
+// شبه المنحرفة (Trapezius)
+[-1,1].forEach(s=>{
+  makeFiberBundle([
+    new THREE.Vector3(0,2.5,-0.2),
+    new THREE.Vector3(s*0.25,2.3,-0.18),
+    new THREE.Vector3(s*0.5,2.1,-0.15),
+    new THREE.Vector3(s*0.7,1.9,-0.12)
+  ],0.04,16,musMat(0xc62828,0.38),'deltoids',musG,3);
+});
+
+// ==== الأعصاب الرئيسية ====
+const nerveMat=new THREE.MeshStandardMaterial({color:0xffd54f,roughness:0.3,emissive:0xffa000,emissiveIntensity:0.15});
+// الضفيرة العضدية
+[-1,1].forEach(s=>{
+  const nP=[new THREE.Vector3(s*0.12,2.4,0),new THREE.Vector3(s*0.5,2.1,0.05),new THREE.Vector3(s*0.85,1.7,0.05),new THREE.Vector3(s*1.0,1.0,0.04)];
+  const nC=new THREE.CatmullRomCurve3(nP);vesG.add(new THREE.Mesh(new THREE.TubeGeometry(nC,16,0.008,6,false),nerveMat));
+});
+// العصب الوركي
+[-1,1].forEach(s=>{
+  const nP=[new THREE.Vector3(s*0.3,0,-0.1),new THREE.Vector3(s*0.35,-0.8,-0.08),new THREE.Vector3(s*0.37,-1.8,-0.05),new THREE.Vector3(s*0.38,-2.8,-0.03)];
+  const nC=new THREE.CatmullRomCurve3(nP);vesG.add(new THREE.Mesh(new THREE.TubeGeometry(nC,16,0.008,6,false),nerveMat));
+});
+
+// =============================================
+// =============================================
+// الواجهة التفاعلية (مخصصة للهواتف 100%)
+// =============================================
+const sideN=document.getElementById('sideN');
+const lpEl=document.getElementById('lp');
+const tapLabel=document.getElementById('tapLabel');
+
+// موضع شريط الأعضاء: أسفل الشريط العلوي للهاتف دائماً
+function positionSideNav(){
+  const topBar = document.querySelector('.top-bar');
+  const tbH = topBar ? topBar.offsetHeight : 95;
+  sideN.style.top = (tbH + 4) + 'px';
+  sideN.style.bottom = 'auto';
+}
+positionSideNav();
+window.addEventListener('resize', positionSideNav);
+
+// توليد أزرار الأعضاء لشريط التصفح الأفقي
+Object.entries(P).forEach(([k,v])=>{
+  const b=document.createElement('button');b.className='sb';b.dataset.p=k;
+  b.innerHTML=`<span class="sd"></span><span>${v.ic} ${v.n}</span>`;
+  b.onclick=()=>{
+    selPart(k);
+    lpEl.classList.remove('collapsed'); // فتح لوحة الغزل تلقائياً
+  };
+  sideN.appendChild(b);
+});
+
+// === Bottom Sheet: مقبض السحب والنقر للطي/الفتح ===
+const lpHandle = document.getElementById('lpHandle');
+lpHandle.addEventListener('click', ()=>{
+  lpEl.classList.toggle('collapsed');
+});
+
+// سحب المقبض باللمس (Touch Swipe)
+let sheetTouchStartY = 0;
+let sheetStartCollapsed = false;
+lpHandle.addEventListener('touchstart', e=>{
+  sheetTouchStartY = e.touches[0].clientY;
+  sheetStartCollapsed = lpEl.classList.contains('collapsed');
+}, {passive:true});
+lpHandle.addEventListener('touchend', e=>{
+  const dy = e.changedTouches[0].clientY - sheetTouchStartY;
+  if(sheetStartCollapsed && dy < -25){
+    lpEl.classList.remove('collapsed'); // سحب لأعلى = فتح
+  } else if(!sheetStartCollapsed && dy > 25){
+    lpEl.classList.add('collapsed'); // سحب لأسفل = طي
+  }
+}, {passive:true});
+
+// === تحديث العضو المختار ومعلومات الغزل بشادية ===
+let selId='heart';
+function selPart(id,anim=true){
+  const d=P[id];if(!d)return;selId=id;
+  // تحديث محتوى اللوحة الداخلية
+  document.getElementById('pI').textContent=d.ic;
+  document.getElementById('pB').textContent=d.sy;
+  document.getElementById('pT').textContent=d.n;
+  document.getElementById('pS').textContent=d.la;
+  document.getElementById('pD').textContent=d.d;
+  document.getElementById('pG').textContent=`"${d.g}"`;
+  document.getElementById('s1l').textContent=d.s1l;
+  document.getElementById('s1v').textContent=d.s1v;
+  document.getElementById('s2l').textContent=d.s2l;
+  document.getElementById('s2v').textContent=d.s2v;
+  
+  // تحديث عنوان المقبض المصغر
+  document.getElementById('pI2').textContent=d.ic;
+  document.getElementById('pT2').textContent=d.n;
+
+  // وميض خفيف للمقبض لتأكيد التغيير
+  lpHandle.style.opacity = '0.7';
+  setTimeout(()=> lpHandle.style.opacity = '1', 200);
+
+  // تحديث الزر النشط في الشريط الأفقي
+  document.querySelectorAll('.sb').forEach(b=>b.classList.toggle('on',b.dataset.p===id));
+  const activeBtn = sideN.querySelector('.sb.on');
+  if(activeBtn){
+    activeBtn.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});
+  }
+
+  // تحريك الكاميرا إلى العضو
+  if(anim&&d.cam&&d.tgt){
+    new TWEEN.Tween(cam.position).to(d.cam,1100).easing(TWEEN.Easing.Cubic.Out).start();
+    new TWEEN.Tween(ctl.target).to(d.tgt,1100).easing(TWEEN.Easing.Cubic.Out).start();
+  }
+}
+
+// === Raycaster لإحداثيات شاشة الهاتف ===
+const ray=new THREE.Raycaster();
+const mse=new THREE.Vector2();
+
+function getRelPointer(clientX, clientY){
+  const rect = ren.domElement.getBoundingClientRect();
+  return {
+    x: ((clientX - rect.left) / rect.width) * 2 - 1,
+    y: -((clientY - rect.top) / rect.height) * 2 + 1,
+    relX: clientX - rect.left,
+    relY: clientY - rect.top,
+    inside: clientX >= rect.left && clientX <= rect.right && clientY >= rect.top && clientY <= rect.bottom
+  };
+}
+
+// النقر بالماوس (داخل إطار الهاتف)
+window.addEventListener('click',e=>{
+  if(e.target.closest('.lp')||e.target.closest('.top-bar')||e.target.closest('.side')||e.target.closest('.mo'))return;
+  const p = getRelPointer(e.clientX, e.clientY);
+  if(!p.inside) return;
+  mse.x = p.x; mse.y = p.y;
+  ray.setFromCamera(mse,cam);
+  const hits=ray.intersectObjects(IX,false);
+  if(hits.length>0){
+    const pid=hits[0].object.userData.partId;
+    if(pid&&P[pid]){
+      selPart(pid);
+      lpEl.classList.remove('collapsed');
+      showTapLabel(p.relX, p.relY, P[pid].n);
+    }
+  }
+});
+
+// أحداث اللمس للهواتف الذكية (Touch Tap)
+let touchStartPos = null;
+let touchStartTime = 0;
+
+ren.domElement.addEventListener('touchstart', e=>{
+  if(e.touches.length === 1){
+    touchStartPos = {x: e.touches[0].clientX, y: e.touches[0].clientY};
+    touchStartTime = Date.now();
+  }
+}, {passive:true});
+
+ren.domElement.addEventListener('touchend', e=>{
+  if(!touchStartPos) return;
+  const touch = e.changedTouches[0];
+  const dx = touch.clientX - touchStartPos.x;
+  const dy = touch.clientY - touchStartPos.y;
+  const dist = Math.sqrt(dx*dx + dy*dy);
+  const duration = Date.now() - touchStartTime;
+  touchStartPos = null;
+
+  // اعتبار اللمسة نقرة إذا كانت حركة قصيرة
+  if(dist < 18 && duration < 350){
+    const p = getRelPointer(touch.clientX, touch.clientY);
+    mse.x = p.x; mse.y = p.y;
+    ray.setFromCamera(mse, cam);
+    const hits = ray.intersectObjects(IX, false);
+    if(hits.length > 0){
+      const pid = hits[0].object.userData.partId;
+      if(pid && P[pid]){
+        selPart(pid);
+        lpEl.classList.remove('collapsed');
+        showTapLabel(p.relX, p.relY, P[pid].n);
+      }
+    }
+  }
+}, {passive:true});
+
+// إشعار النقر التفاعلي
+function showTapLabel(x, y, text){
+  tapLabel.textContent = text;
+  tapLabel.style.left = x + 'px';
+  tapLabel.style.top = y + 'px';
+  tapLabel.classList.add('show');
+  setTimeout(()=> tapLabel.classList.remove('show'), 1200);
+}
+
+// أزرار تصفية الأجهزة التشريحية
+document.querySelectorAll('.cb[data-s]').forEach(b=>{
+  b.addEventListener('click',()=>{
+    document.querySelectorAll('.cb[data-s]').forEach(x=>x.classList.remove('on'));b.classList.add('on');
+    const s=b.dataset.s;
+    if(s==='all'){skelG.visible=true;orgG.visible=true;musG.visible=true;vesG.visible=true;}
+    else if(s==='muscles'){skelG.visible=true;orgG.visible=false;musG.visible=true;vesG.visible=false;selPart('pectorals');}
+    else if(s==='skeleton'){skelG.visible=true;orgG.visible=false;musG.visible=false;vesG.visible=false;selPart('spine');}
+    else if(s==='organs'){skelG.visible=true;orgG.visible=true;musG.visible=false;vesG.visible=true;selPart('heart');}
+    else if(s==='vessels'){skelG.visible=true;orgG.visible=true;musG.visible=false;vesG.visible=true;selPart('heart');}
+  });
+});
+
+// أزرار التحكم في الشريط العلوي
+document.getElementById('bRot').addEventListener('click',function(){ctl.autoRotate=!ctl.autoRotate;ctl.autoRotateSpeed=0.65;this.classList.toggle('on',ctl.autoRotate);});
+document.getElementById('bRst').addEventListener('click',()=>{
+  new TWEEN.Tween(cam.position).to(iCP,1000).easing(TWEEN.Easing.Cubic.Out).start();
+  new TWEEN.Tween(ctl.target).to(iCT,1000).easing(TWEEN.Easing.Cubic.Out).start();
+});
+
+// النافذة المنبثقة لرسالة قيس الجازي الخاصة لشادية
+const modal=document.getElementById('modal');
+document.getElementById('oL').addEventListener('click',()=>modal.classList.add('open'));
+document.getElementById('bLetter').addEventListener('click',()=>modal.classList.add('open'));
+document.getElementById('mX').addEventListener('click',()=>modal.classList.remove('open'));
+modal.addEventListener('click',e=>{if(e.target===modal)modal.classList.remove('open');});
+
+// إعادة ضبط الأبعاد عند تدوير الهاتف أو تغيير حجم النافذة
+window.addEventListener('resize',()=>{
+  const s = getFrameSize();
+  cam.aspect = s.w / s.h;
+  cam.updateProjectionMatrix();
+  ren.setSize(s.w, s.h);
+  positionSideNav();
+});
+
+// =============================================
+// حلقة الرسم والتحريك
+// =============================================
+const clk=new THREE.Clock();
+function anim(){
+  requestAnimationFrame(anim);
+  const t=clk.getElapsedTime();
+  TWEEN.update();ctl.update();
+
+  // نبض القلب
+  const beat=(t*1.15)%1;let hS=1,gI=2;
+  if(beat<0.12){const p=Math.sin(beat/0.12*Math.PI);hS=1+p*0.22;gI=2.5+p*3.5;}
+  else if(beat>0.16&&beat<0.28){const p=Math.sin((beat-0.16)/0.12*Math.PI);hS=1+p*0.13;gI=2+p*2;}
+  htG.scale.set(hS,hS,hS);hGL.intensity=gI;
+
+  // تنفس الرئتين
+  const br=1+Math.sin(t*1.1)*0.045;luG.scale.set(br,br,br);
+
+  // وميض الأعصاب والدماغ
+  if(snPts.material)snPts.material.opacity=0.35+Math.sin(t*5)*0.4;
+
+  pts.rotation.y=t*0.018;rMs.rotation.z=t*0.12;
+  ren.render(sc,cam);
+}
+selPart('heart',false);anim();
+</script>
+</body>
+</html>
